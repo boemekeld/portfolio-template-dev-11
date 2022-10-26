@@ -9,8 +9,8 @@ jobs:
     name: Deploy on bohr.io
     runs-on: ubuntu-latest
     steps:
-      - uses: dcodeIO/setup-node-nvm@v4
       - uses: actions/checkout@v3
+      - uses: dcodeIO/setup-node-nvm@v4
       - uses: bohr-io/action@main
         with:
           cli-version: '@bohr.io/bohr-dev@dev'
